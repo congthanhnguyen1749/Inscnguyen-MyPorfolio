@@ -1,0 +1,151 @@
+@import "./global";
+
+/* – Để dành viết CSS cho việc lên bố cục cho website như chia cột. */
+.lead__menu {
+	width: 30vh;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	background-image: linear-gradient(to bottom left,
+			#d6caf8,
+			#f1edfa);
+	opacity: 0;
+	animation: hiddenON 1s 1.5s linear forwards;
+
+	&--top {
+		height: 20.333333%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-logo {
+			border: 2px solid white;
+			height: 40%;
+			border-radius: 10px;
+			width: 40%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+		}
+
+		&-text {
+			font-weight: 100;
+			font-size: 30px;
+			color: white;
+		}
+	}
+
+	&--middle {
+		height: calc(100% - (17.333333% * 2));
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 50px;
+
+		&-list>li {
+			color: #6632f5;
+			animation: textmenu 1s 2.5s linear forwards;
+			opacity: 0;
+
+
+		}
+	}
+
+	&--last {
+		height: 22.333333%;
+		display: flex;
+		justify-content: space-evenly;
+
+		&-logo {
+			.logo {
+				filter: invert(999990) sepia(110) saturate(0) hue-rotate(896deg);
+				animation: hiddenON 1s 2s linear forwards;
+				opacity: 0;
+			}
+		}
+
+	}
+}
+
+.content__main {
+	width: calc(100% - 30.2vh);
+	height: 100vh;
+	overflow: auto;
+	position: absolute;
+	left: 0;
+
+	&--head {
+		height: 100vh;
+		display: flex;
+		background-image: linear-gradient(left bottom,
+				rgba(190, 176, 230, 0.623),
+				white);
+		opacity: 0;
+		animation: hiddenON 1.5s 0.5s linear forwards;
+
+		&--left {
+			width: 70%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			&-box-1 {
+				height: 70vh;
+				display: flex;
+				justify-content: flex-end;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.text__name-user {
+					z-index: 1;
+					font-size: 50px;
+					color: #8556f3cb;
+					line-height: 50px;
+					font-weight: 900;
+					text-shadow: -4px -2px 1px #d4c7fcb4;
+					animation: appear 1s 1.5s ease-in forwards alternate;
+					opacity: 0;
+
+
+
+					.text__name-user-under {
+						text-decoration: underline;
+
+					}
+				}
+
+				//avatar
+				.img__avatar {
+					right: 5%;
+					top: 10%;
+					position: absolute;
+					max-width: 100%;
+					height: 590px;
+					animation: avatar 1s 3.6s linear forwards;
+					opacity: 0;
+				}
+
+
+			}
+		}
+
+		&--right {
+			width: 30%;
+			height: 100vh;
+		}
+	}
+
+	&--body {
+		height: 100vh;
+		background-color: green;
+	}
+
+	&--foot {
+		height: 100vh;
+		background-color: blue;
+	}
+}

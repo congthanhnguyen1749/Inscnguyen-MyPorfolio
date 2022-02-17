@@ -1,0 +1,61 @@
+/* – Dùng để tạo biến chung, toàn cục cho trang web */
+$color-red: red;
+$color-white: white;
+$color-text:#555555;
+$color-text:#9a9a9a;
+$border-color:#f1f1f1;
+
+* {
+	text-decoration: none;
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes textmenu {
+	0% {
+		opacity: 0;
+		transform: translateX(40%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(10%);
+
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: translateX(-40%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(2%);
+
+	}
+}
+
+@keyframes avatar {
+	0% {
+		opacity: 0;
+		transform: translateX(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+
+	}
+}
+
+@keyframes hiddenON {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
